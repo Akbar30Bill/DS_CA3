@@ -1,10 +1,8 @@
 lll=int(input())
 mdn=list(map(int,input().split()))
-lst=[0]*lll
+lst=[0]*(max(mdn)+1)
 for i in range(lll):
     lst[mdn[i]] += 1
-for i in range(lll):
-    lst.append(mdn.count(mdn[i]))
 stk=[]
 sstk=[]
 for i in range(lll-1 , -1 , -1):
